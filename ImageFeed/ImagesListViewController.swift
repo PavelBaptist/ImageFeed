@@ -31,3 +31,7 @@ extension ImagesListViewController: UITableViewDataSource{
         return UITableViewCell()
     }
 }
+
+final class ImagesListCell: UITableViewCell {
+
+}
