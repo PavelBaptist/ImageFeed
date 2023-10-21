@@ -11,8 +11,8 @@ final class ImagesListCell: UITableViewCell {
         
     override func awakeFromNib() {
         gradientView.clipsToBounds = true
-        gradientView.layer.cornerRadius = 5
-        gradientView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        gradientView.layer.cornerRadius = 16
+        gradientView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
        
         let gradient = CAGradientLayer()
         gradient.frame = gradientView.bounds
