@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="QYe-vV-8Wg">
-                                                    <rect key="frame" x="16" y="0.0" width="361" height="172"/>
+                                                    <rect key="frame" x="16" y="4" width="361" height="164"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="16"/>
@@ -39,7 +39,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFR-fd-7nh" userLabel="Like Button">
-                                                    <rect key="frame" x="333" y="0.0" width="44" height="44"/>
+                                                    <rect key="frame" x="333" y="4" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="CSi-A7-J1C"/>
                                                         <constraint firstAttribute="width" constant="44" id="dtF-a4-PVe"/>
@@ -48,7 +48,7 @@
                                                     <state key="normal" image="like_button_on"/>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-IR-5a5">
-                                                    <rect key="frame" x="16" y="142" width="361" height="30"/>
+                                                    <rect key="frame" x="16" y="138" width="361" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCy-zA-bh2" userLabel="Date Label">
                                                             <rect key="frame" x="8" y="4" width="345" height="18"/>
@@ -69,11 +69,11 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QYe-vV-8Wg" firstAttribute="top" secondItem="Rin-1Q-49l" secondAttribute="top" id="Agt-Ut-ngr"/>
+                                                <constraint firstItem="QYe-vV-8Wg" firstAttribute="top" secondItem="Rin-1Q-49l" secondAttribute="top" constant="4" id="Agt-Ut-ngr"/>
                                                 <constraint firstItem="QYe-vV-8Wg" firstAttribute="leading" secondItem="Rin-1Q-49l" secondAttribute="leading" constant="16" id="MUO-Zs-ULj"/>
                                                 <constraint firstItem="ZDe-IR-5a5" firstAttribute="bottom" secondItem="QYe-vV-8Wg" secondAttribute="bottom" id="Qe3-XS-n98"/>
                                                 <constraint firstItem="ZDe-IR-5a5" firstAttribute="leading" secondItem="QYe-vV-8Wg" secondAttribute="leading" id="Rzc-fH-J6i"/>
-                                                <constraint firstAttribute="bottom" secondItem="QYe-vV-8Wg" secondAttribute="bottom" id="XIK-mp-PMi"/>
+                                                <constraint firstAttribute="bottom" secondItem="QYe-vV-8Wg" secondAttribute="bottom" constant="4" id="XIK-mp-PMi"/>
                                                 <constraint firstItem="ZDe-IR-5a5" firstAttribute="trailing" secondItem="QYe-vV-8Wg" secondAttribute="trailing" id="ae3-RJ-Zzr"/>
                                                 <constraint firstAttribute="trailing" secondItem="QYe-vV-8Wg" secondAttribute="trailing" constant="16" id="geV-RI-GpQ"/>
                                                 <constraint firstItem="cFR-fd-7nh" firstAttribute="top" secondItem="QYe-vV-8Wg" secondAttribute="top" id="sQk-42-pJq"/>
