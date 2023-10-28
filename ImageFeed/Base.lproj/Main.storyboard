@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="486" y="-711"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="uz6-yC-ge4">
             <objects>
-                <viewController id="x1v-hI-lii" customClass="ProfileViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="x1v-hI-lii" customClass="ProfileViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="70d-QT-bFe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +152,9 @@
                                 <rect key="frame" x="357" y="114" width="20" height="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="exit_button"/>
+                                <connections>
+                                    <action selector="didTapLogoutButton" destination="x1v-hI-lii" eventType="touchUpInside" id="bSy-W7-Rk2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-Kk-5jT" userLabel="Name Label">
                                 <rect key="frame" x="16" y="169" width="361" height="28"/>
@@ -179,10 +182,17 @@
                             <constraint firstItem="OCY-Jr-VQU" firstAttribute="trailing" secondItem="bd5-Kk-5jT" secondAttribute="trailing" id="tTU-nJ-ljx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="mcb-LH-fPJ" id="xJH-5l-FSN"/>
+                        <outlet property="descriptionLabel" destination="NEI-EH-E5A" id="fKs-9x-DLm"/>
+                        <outlet property="loginNameLabel" destination="OCY-Jr-VQU" id="la1-pu-NIh"/>
+                        <outlet property="logoutLabel" destination="mfi-AM-MES" id="RlX-NB-SCy"/>
+                        <outlet property="nameLabel" destination="bd5-Kk-5jT" id="s7s-jj-leI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3Y-Cy-POw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-292" y="-711"/>
+            <point key="canvasLocation" x="-292.36641221374043" y="-711.26760563380287"/>
         </scene>
     </scenes>
     <resources>
