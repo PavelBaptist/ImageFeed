@@ -161,18 +161,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQh-Mr-OBf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQh-Mr-OBf">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="414" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-xV-Rsy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="414" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-xV-Rsy">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="top" secondItem="AQh-Mr-OBf" secondAttribute="top" id="0VI-sR-ThW"/>
-                                    <constraint firstAttribute="trailing" secondItem="SJM-xV-Rsy" secondAttribute="trailing" id="6GL-Pe-9U6"/>
-                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="leading" secondItem="AQh-Mr-OBf" secondAttribute="leading" id="iOP-Ka-E7a"/>
-                                    <constraint firstAttribute="bottom" secondItem="SJM-xV-Rsy" secondAttribute="bottom" id="ihB-Wg-TOj"/>
+                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="top" secondItem="pO7-bx-QHC" secondAttribute="top" id="DLt-0m-oiw"/>
+                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="leading" secondItem="pO7-bx-QHC" secondAttribute="leading" id="Fa3-18-CB6"/>
+                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="trailing" secondItem="pO7-bx-QHC" secondAttribute="trailing" id="MOn-dL-UVu"/>
+                                    <constraint firstItem="SJM-xV-Rsy" firstAttribute="bottom" secondItem="pO7-bx-QHC" secondAttribute="bottom" id="Rw8-JS-Wgy"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="riV-cQ-9q4"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="pO7-bx-QHC"/>
@@ -217,6 +217,7 @@
                     <navigationItem key="navigationItem" id="AU1-Hm-ExG"/>
                     <connections>
                         <outlet property="ImageView" destination="SJM-xV-Rsy" id="fXX-4E-tjD"/>
+                        <outlet property="imageView" destination="SJM-xV-Rsy" id="S2p-gX-cnj"/>
                         <outlet property="scrollView" destination="AQh-Mr-OBf" id="qEj-r4-wPH"/>
                     </connections>
                 </viewController>
