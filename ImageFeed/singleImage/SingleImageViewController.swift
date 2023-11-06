@@ -1,6 +1,13 @@
 import UIKit
 
 class SingleImageViewController: UIViewController{
-    @IBOutlet var ImageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
+ 
+    var image: UIImage!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imageView.image = image
+    }
     
 }

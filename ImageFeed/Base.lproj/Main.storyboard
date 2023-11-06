@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QJm-2Q-Lvg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCg-8C-aDv">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -108,6 +108,7 @@
                     <navigationItem key="navigationItem" id="68z-2a-geQ"/>
                     <connections>
                         <outlet property="tableView" destination="X7w-gh-BHE" id="il4-fR-Prt"/>
+                        <segue destination="QJm-2Q-Lvg" kind="show" identifier="ShowSingleImage" id="AKF-57-kVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -250,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-xV-Rsy">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pcq-Hw-rb6"/>
@@ -262,13 +263,14 @@
                             <constraint firstItem="SJM-xV-Rsy" firstAttribute="leading" secondItem="pcq-Hw-rb6" secondAttribute="leading" id="ptP-Q9-ZZB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AU1-Hm-ExG"/>
                     <connections>
                         <outlet property="ImageView" destination="SJM-xV-Rsy" id="fXX-4E-tjD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FN-Rf-H3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1953" y="-1503"/>
+            <point key="canvasLocation" x="1544" y="-1420"/>
         </scene>
     </scenes>
     <resources>
