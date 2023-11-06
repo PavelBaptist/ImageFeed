@@ -2,6 +2,7 @@ import UIKit
 
 class SingleImageViewController: UIViewController{
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var scrollView: UIScrollView!
     
     var image: UIImage!
         
